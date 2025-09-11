@@ -1,4 +1,4 @@
-# 🚀 DOM JavaScript Tutorial - Student Guide
+# DOM JavaScript Tutorial - Learner's Guide
 
 Welcome to your comprehensive DOM JavaScript learning journey! This tutorial will take you from beginner to confident DOM manipulator through hands-on, interactive examples.
 
