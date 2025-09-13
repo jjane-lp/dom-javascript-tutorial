@@ -267,9 +267,26 @@ const elements = document.querySelectorAll('.myClass'); // all matching elements
                     <p id="practice-p" class="demo-text">I'm a paragraph with ID and class!</p>
                     <div class="demo-text">I'm a div with class only</div>
                     <span>I'm just a span</span>
+                    <p id="henry">im henry kato</p>
                     <button class="btn" onclick="practiceSelection()">Test Selections</button>
                     <div id="selection-result"></div>
+                    <div id="selection-result-henry"></div>
+
                 </div>
+
+
+                <h3>Practice Selection:</h3> <!--change this -->
+                <div class="demo-area"> <!--change this -->
+                    <p id="practice-p" class="demo-text">I'm a paragraph with ID and class!</p> <!--change this -->
+                    <div class="demo-text">I'm a div with class only</div> <!--change this -->
+                    <span>I'm just a span</span> <!--change this -->
+                    <button class="btn" onclick="practiceSelection()">Test Selections</button> <!--change this -->
+                    <div id="selection-result"></div> <!--change this -->
+                </div>
+
+               
+
+
             </div>
 
             <!-- Section 3: Modifying Content -->
@@ -492,20 +509,25 @@ const email = document.getElementById('email').value;
         // Section 2: Selection Practice
         function practiceSelection() {
             const resultDiv = document.getElementById('selection-result');
+            const resultDiv2 = document.getElementById('selection-result-henry');
+            const byid2 = document.getelementbyid("henry")
+
             
             // Different selection methods
             const byId = document.getElementById('practice-p');
             const byClass = document.getElementsByClassName('demo-text');
             const byQuery = document.querySelector('.demo-text');
             const byQueryAll = document.querySelectorAll('.demo-text');
+
+            resultDiv2.innerHTML = "This is a practice session"
             
             resultDiv.innerHTML = `
-                <h4>Selection Results:</h4>
-                <p><strong>getElementById:</strong> Found ${byId ? 1 : 0} element</p>
-                <p><strong>getElementsByClassName:</strong> Found ${byClass.length} elements</p>
-                <p><strong>querySelector:</strong> Found ${byQuery ? 1 : 0} element</p>
-                <p><strong>querySelectorAll:</strong> Found ${byQueryAll.length} elements</p>
-            `;
+            //     <h4>Selection Results:</h4>
+            //     <p><strong>getElementById:</strong> Found ${byId ? 1 : 0} element</p>
+            //     <p><strong>getElementsByClassName:</strong> Found ${byClass.length} elements</p>
+            //     <p><strong>querySelector:</strong> Found ${byQuery ? 1 : 0} element</p>
+            //     <p><strong>querySelectorAll:</strong> Found ${byQueryAll.length} elements</p>
+            // `;
         }
 
         // Section 3: Content Modification
